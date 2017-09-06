@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>HTML Learning Document</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+<meta name="author" content="Hege Refsnes">
+<meta name="description" content="Free Web tutorials">
+<meta http-equiv="refresh" content="300">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="../css/main.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]--> <!-- helps to render new HTML5 elements in IE9 and earlier version -->
+
+<meta charset = "UTF-8">
+<style>
+body{
+	margin:80px;
+
+}
+.padding-class{
+    border: 1px solid powderblue;
+    padding: 30px;
+    margin:30px;
+    text-align: center;
+}
+#first{
+	text-align: left;
+color:green;
+background: blue;<meta name="author" content="Hege Refsnes">
+}
+#third{
+background: pink;
+color:red;
+text-align: right;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+table#t01 tr:nth-child(even) {
+    background-color: yellow;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:red;
+}
+table#t01 th {
+    background-color: green;
+    color: white;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+#copy-disable{
+	-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+</style>
+</head>
+<body style="background-color:lightgreen;">
+<button type="button" onclick="bgColorFunction()">Background Color</button><span id = "colorName">Color name</span>&#160;&#160;&#160;&#160;<span id = "colorNum">Color number<</span>
+
+
+<h1 id="firstSection"><a href = "#secondSection">First Part of HTML</a></h1>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<p title="I'm a tooltip">
+Mouse over this paragraph, to display the title attribute as a tooltip.
+</p>
+ <a href="http://www.w3schools.com">This is a link</a>
+ <img  src = "../img/html5.png" width = "200" alt = "HTML5" />
+ <h1> Different Heading Elements</h1>
+
+ <h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+<h3> This is how to use lines in HTML</h3>
+<hr id = "green" />
+<hr id ="yellow"/>
+<hr id = "red"/>
+
+<p>This is<br>a paragraph<br>with line breaks.</p>
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+<h1> Internal Style</h1>
+
+<h2 style="color:green;font-size:25px;font-weight: bold; font-family:verdana;text-align: left;">I am red</h2>
+<h2 style="color:yellow;text-align: center;">I am blue</h2>
+<h2 style = "color:red;text-align: right;">I am red</h2>
+<h1 id="secondSection">First Part of HTML</h1>
+<h1> Formating HTML Elements</h1>
+<p> <b> This text is bold</b></p>
+<p> <i> This text is italic</i></p>
+<p>H<sub>2</sub>SO<sub>4</sub></p>
+<p> PO<sub>4</sub><sup>-3</sup>
+
+<p> I <ins>like</ins> to learn <ins><del><b> <i> <mark> HTML, CSS, JavaScript</mark></i></b></del></ins></p>
+
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+
+<img src="../img/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+<p>Some programming code:</p>
+
+<code>
+var x = 5;<br>
+var y = 6;<br>
+document.getElementById("demo").innerHTML = x + y;
+</code>
+
+<p>The kbd element represents keyboard input:</p>
+
+<p><kbd>File | Open...</kbd></p>
+
+<samp>
+demo.example.com login: Apr 12 09:10:17
+Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+</samp>
+
+<pre>
+<code>
+var x = 5;
+var y = 6;
+document.getElementById("demo").innerHTML = x + y;
+</code>
+</pre>
+
+<p>Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.</p>
+<h2> HTML Comments</h2>
+<kbd> <!-- Write your comments here -->"</kbd>
+
+<h2 style="background-color:red">
+Background-color set by using red
+</h2>
+
+<h2 style="background-color:orange">
+Background-color set by using orange
+</h2>
+
+<h2 style="background-color:yellow">
+Background-color set by using yellow
+</h2>
+
+<h2 style="background-color:blue;color:white">
+Background-color set by using blue
+</h2>
+
+<h2 style="background-color:cyan">
+Background-color set by using cyan
+</h2>
+
+<h1>This is a Padding</h1>
+
+<p id = "first" class = "padding-class">Content of the paragraph.</p>
+<p class = "padding-class">Content of the paragraph.</p>
+<p id  = "third" class = "padding-class">Content of the paragraph.</p>
+<p>The image is a link. You can click on it.</p>
+<h1 id="secondSection"><a href = "#firstSection">Second Part of HTML</a></h1>
+<a href="http://www.w3schools.com/html/html_links.asp">
+  <img src="../img/smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+</a>
+ <p><strong>Float the image to the right:</strong></p>
+<p>
+<img src="../img/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+</p>
+
+<p><strong>Float the image to the left:</strong></p>
+<p>
+<img src="../img/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+</p>
+
+<p>Please use the CSS float property. The align attribute is deprecated in HTML 4, and not supported in HTML5.</p>
+
+
+
+
+
+<table>
+<caption>Table - 1 . Company names and thier contacts</caption>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+    <th  colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+      <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+      <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+      <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+      <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+      <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+      <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h1> Exmaple of Div Elements</h1>
+<div id = "copy-disable" style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
+
+<iframe src="http://www.w3schools.com/html/html_iframe.asp" height="200" width="300"></iframe>
+
+<iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+
+
+
+<img id="myImage" src="../img/pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+
+</p>
+<img id = "diffImages" src = "../img/politics.jpg" style = "width:25%;">
+<button onClick = "picChange()" type = "button"> CHANGE PIC</button><span id = "num"></span>
+
+
+<div class="w3-container w3-orange">
+  <h1>W3.CSS Demo</h1>
+  <p>Resize this responsive page!</p>
+</div>
+
+<div class="w3-row-padding">
+
+<div class="w3-third">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+  <p>It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<div class="w3-third">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+  <p>The Paris area is one of the largest population centers in Europe,
+  with more than 12 million inhabitants.</p>
+</div>
+
+<div class="w3-third">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  <p>It is the center of the Greater Tokyo Area,
+  and the most populous metropolitan area in the world.</p>
+</div>
+
+</div>
+
+<h2>Some Other Useful HTML Character Entities</h2>
+<table class="w3-table-all notranslate">
+    <tr>
+      <th>Result</th>
+      <th>Description</th>
+      <th>Entity Name</th>
+      <th>Entity Number</th>
+    </tr>
+    <tr>
+      <td style="height: 29px"></td>
+      <td style="height: 29px">non-breaking space</td>
+      <td style="height: 29px">&amp;nbsp;</td>
+      <td style="height: 29px">&amp;#160;</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+    </tr>
+    <tr>
+      <td>&quot;</td>
+      <td>double quotation mark </td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+    </tr>
+    <tr>
+      <td>&apos;</td>
+      <td>single quotation mark (apostrophe) </td>
+      <td>&amp;apos;</td>
+      <td>&amp;#39;</td>
+    </tr>
+    <tr>
+      <td>&cent;</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+    </tr>
+    <tr>
+      <td>&pound;</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+    </tr>
+    <tr>
+      <td>&yen;</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+    </tr>
+    <tr>
+      <td>&euro;</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+    </tr>
+    <tr>
+      <td>&copy;</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+    </tr>
+    <tr>
+      <td>&#174;</td>
+      <td>registered trademark</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+    </tr>
+    </table>
+
+
+
+<h2>Combining Diacritical Marks</h2>
+<p>A diacritical mark is a &quot;glyph&quot; added to a letter.</p>
+<p>Some diacritical marks, like grave (&nbsp; &#768;) and acute (&nbsp; &#769;) are called accents. </p>
+<p>Diacritical marks can appear both above and below a letter, inside a letter, 
+and between two letters.</p>
+<p>Diacritical marks can be used in combination with alphanumeric characters, to produce a character that is not present in 
+the character set (encoding) used in the page.</p>
+<p>Here are some examples:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Mark</th>
+<th>Character</th>
+<th>Construct</th>
+<th>Result</th>
+</tr>
+<tr>
+      <td>&nbsp;&#768;</td>
+      <td>a</td>
+      <td>a&amp;#768;</td>
+      <td>a&#768;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#769;</td>
+      <td>a</td>
+      <td>a&amp;#769;</td>
+      <td>a&#769;</td>
+</tr>
+<tr>
+      <td>&#770;</td>
+      <td>a</td>
+      <td>a&amp;#770;</td>
+      <td>a&#770;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#771;</td>
+      <td>a</td>
+      <td>a&amp;#771;</td>
+      <td>a&#771;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#768;</td>
+      <td>O</td>
+      <td>O&amp;#768;</td>
+      <td>O&#768;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#769;</td>
+      <td>O</td>
+      <td>O&amp;#769;</td>
+      <td>O&#769;</td>
+</tr>
+<tr>
+      <td>&#770;</td>
+      <td>O</td>
+      <td>O&amp;#770;</td>
+      <td>O&#770;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#771;</td>
+      <td>O</td>
+      <td>O&amp;#771;</td>
+      <td>O&#771;</td>
+</tr>
+</table>
+<h1>HTML Symbol Entities </h1>
+<p>I will display &euro;</p>
+<p>I will display &#8364;</p>
+<p>I will display &#x20AC;</p>
+
+<h1> Some Mathematical Symbols Supported by HTML</h1>
+<h2>Some Mathematical Symbols Supported by HTML</h2>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:10%">Char</th>
+<th style="width:10%">Number</th>
+<th style="width:15%">Entity</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&#8704;</td>
+<td>&amp;#8704;</td>
+<td>&amp;forall;</td>
+<td>FOR ALL</td>
+</tr>
+<tr>
+<td>&#8706;</td>
+<td>&amp;#8706;</td>
+<td>&amp;part;</td>
+<td>PARTIAL DIFFERENTIAL</td>
+</tr>
+<tr>
+<td>&#8707;</td>
+<td>&amp;#8707;</td>
+<td>&amp;exist;</td>
+<td>THERE EXISTS</td>
+</tr>
+<tr>
+<td>&#8709;</td>
+<td>&amp;#8709;</td>
+<td>&amp;empty;</td>
+<td>EMPTY SETS</td>
+</tr>
+<tr>
+<td>&#8711;</td>
+<td>&amp;#8711;</td>
+<td>&amp;nabla;</td>
+<td>NABLA</td>
+</tr>
+<tr>
+<td>&#8712;</td>
+<td>&amp;#8712;</td>
+<td>&amp;isin;</td>
+<td>ELEMENT OF</td>
+</tr>
+<tr>
+<td>&#8713;</td>
+<td>&amp;#8713;</td>
+<td>&amp;notin;</td>
+<td>NOT AN ELEMENT OF</td>
+</tr>
+<tr>
+<td>&#8715;</td>
+<td>&amp;#8715;</td>
+<td>&amp;ni;</td>
+<td>CONTAINS AS MEMBER</td>
+</tr>
+<tr>
+<td>&#8719;</td>
+<td>&amp;#8719;</td>
+<td>&amp;prod;</td>
+<td>N-ARY PRODUCT</td>
+</tr>
+<tr>
+<td>&#8721;</td>
+<td>&amp;#8721;</td>
+<td>&amp;sum;</td>
+<td>N-ARY SUMMATION</td>
+</tr>
+</table>
+<h2>Some Greek Letters Supported by HTML</h2>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:10%">Char</th>
+<th style="width:10%">Number</th>
+<th style="width:15%">Entity</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&#913;</td>
+<td>&amp;#913;</td>
+<td>&amp;Alpha;</td>
+<td>GREEK CAPITAL LETTER ALPHA</td>
+</tr>
+<tr>
+<td>&#914;</td>
+<td>&amp;#914;</td>
+<td>&amp;Beta;</td>
+<td>GREEK CAPITAL LETTER BETA</td>
+</tr>
+<tr>
+<td>&#915;</td>
+<td>&amp;#915;</td>
+<td>&amp;Gamma;</td>
+<td>GREEK CAPITAL LETTER GAMMA</td>
+</tr>
+<tr>
+<td>&#916;</td>
+<td>&amp;#916;</td>
+<td>&amp;Delta;</td>
+<td>GREEK CAPITAL LETTER DELTA</td>
+</tr>
+<tr>
+<td>&#917;</td>
+<td>&amp;#917;</td>
+<td>&amp;Epsilon;</td>
+<td>GREEK CAPITAL LETTER EPSILON</td>
+</tr>
+<tr>
+<td>&#918;</td>
+<td>&amp;#918;</td>
+<td>&amp;Zeta;</td>
+<td>GREEK CAPITAL LETTER ZETA</td>
+</tr>
+</table>
+<p><a href="/charsets/ref_utf_greek.asp">Full Greek Reference</a></p>
+<hr>
+<h2>Some Other Entities Supported by HTML</h2>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:10%">Char</th>
+<th style="width:10%">Number</th>
+<th style="width:15%">Entity</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&#169;</td>
+<td>&amp;#169;</td>
+<td>&amp;copy;</td>
+<td>COPYRIGHT SIGN</td>
+</tr>
+<tr>
+<td>&#174;</td>
+<td>&amp;#174;</td>
+<td>&amp;reg;</td>
+<td>REGISTERED SIGN</td>
+</tr>
+<tr>
+<td>&#8364;</td>
+<td>&amp;#8364;</td>
+<td>&amp;euro;</td>
+<td>EURO SIGN</td>
+</tr>
+<tr>
+<td>&#8482;</td>
+<td>&amp;#8482;</td>
+<td>&amp;trade;</td>
+<td>TRADEMARK</td>
+</tr>
+<tr>
+<td>&#8592;</td>
+<td>&amp;#8592;</td>
+<td>&amp;larr;</td>
+<td>LEFTWARDS ARROW</td>
+</tr>
+<tr>
+<td>&#8593;</td>
+<td>&amp;#8593;</td>
+<td>&amp;uarr;</td>
+<td>UPWARDS ARROW</td>
+</tr>
+<tr>
+<td>&#8594;</td>
+<td>&amp;#8594;</td>
+<td>&amp;rarr;</td>
+<td>RIGHTWARDS ARROW</td>
+</tr>
+<tr>
+<td>&#8595;</td>
+<td>&amp;#8595;</td>
+<td>&amp;darr;</td>
+<td>DOWNWARDS ARROW</td>
+</tr>
+<tr>
+<td>&#9824;</td>
+<td>&amp;#9824;</td>
+<td>&amp;spades;</td>
+<td>BLACK SPADE SUIT</td>
+</tr>
+<tr>
+<td>&#9827;</td>
+<td>&amp;#9827;</td>
+<td>&amp;clubs;</td>
+<td>BLACK CLUB SUIT</td>
+</tr>
+<tr>
+<td>&#9829;</td>
+<td>&amp;#9829;</td>
+<td>&amp;hearts;</td>
+<td>BLACK HEART SUIT</td>
+</tr>
+<tr>
+<td>&#9830;</td>
+<td>&amp;#9830;</td>
+<td>&amp;diams;</td>
+<td>BLACK DIAMOND SUIT</td>
+</tr>	    
+</table>
+<h1> How to write Form in HTML</h1>
+
+<form>
+  First name:<input type="text" name="firstname">
+  <br>
+  Last name:<input type="text" name="lastname">
+</form>
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form action="action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<form action="action_page.php">
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+<form action="action_page.php">
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br>
+  <input type="submit">
+</form>
+<form action="action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+<form action="action_page.php">
+  Username: <input type="text" name="user">
+  <br><br>
+  Encryption: <keygen name="security">
+  <br><br>
+  <input type="submit">
+</form>
+<form action="action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="c" value="50">
+  =
+  <output name="x" for="a c"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+
+<form>
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5">
+</form>
+
+<form>
+  Quantity:
+  <input type="number" name="points" min="0" max="100" step="10" value="30">
+</form>
+
+<p>
+Depending on browser support:<br>
+A date picker can pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+  Birthday:
+  <input type="date" name="bday">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 10 and earlier versions.</p>
+
+<h2> You can also add restrictions to dates:</h2>
+<form action="action_page.php">
+Enter a date before 1980-01-01:<br>
+<input type="date" name="bday" max="1979-12-31"><br><br>
+Enter a date after 2000-01-01:<br>
+<input type="date" name="bday" min="2000-01-02"><br><br>
+<input type="submit">
+</form>
+
+<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 10 and earlier versions.</p>
+
+<p>
+Depending on browser support:<br>
+A color picker can pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+  Select your favorite color:
+  <input type="color" name="favcolor" value="#ff0000">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> type="color" is not supported in Internet Explorer / Edge.</p>
+
+
+<p>
+Depending on browser support:<br>
+The input type "range" can be displayed as a slider control.
+</p>
+
+<form action="action_page.php" method="get">
+  Points:
+  <input type="range" name="points" min="0" max="10">
+  <input type="submit">
+</form>
+
+<p>
+<b>Note:</b>
+type="range" is not supported in Internet Explorer 9 and earlier versions.
+</p>
+
+<p>
+Depending on browser support:<br>
+A date picker can pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+  Select a week:
+  <input type="week" name="year_week">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> type="week" is not supported in Internet Explorer 10 and earlier versions.</p>
+
+<p>
+Depending on browser support:<br>
+A time picker might pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+  Select a time:
+  <input type="time" name="usr_time">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> type="time" is not supported in Firefox, or Internet Explorer 10 and earlier versions.</p>
+
+
+<p>
+Depending on browser support:<br>
+A date picker can pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+  <input type="submit" value="Send">
+</form>
+
+<p><strong>Note:</strong> type="time" is not supported in Firefox, or Internet Explorer 10 and earlier versions.</p>
+
+<form action="action_page.php">
+  E-mail:
+  <input type="email" name="email">
+  <input type="submit">
+</form>
+
+<p>
+<b>Note:</b>type="email" is not supported in IE9 and earlier.</p>
+
+<form action="action_page.php">
+  Search Google:
+  <input type="search" name="googlesearch">
+  <input type="submit">
+</form>
+
+<form action="action_page.php">
+  Telephone:
+  <input type="tel" name="usrtel">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> type="tel" is supported only in Safari 8.</p>
+
+<form action="action_page.php">
+  Add your homepage:
+  <input type="url" name="homepage">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b>
+The type="url" is not supported in IE9 and earlier versions.</p>
+
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John" readonly>
+</form>
+
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value ="John" disabled>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John" size="40">
+</form>
+
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John" size="40">
+</form>
+
+<form action="">
+First name:<br>
+<input type="text" name="firstname" maxlength="10">
+</form>
+
+
+<form action="action_page.php" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>
+
+<p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+<p>Notice that autocomplete is "on" for the form, but "off" for the e-mail fiel</p>
+
+
+<form action="action_page.php" novalidate>
+E-mail: <input type="email" name="user_email">
+<input type="submit">
+</form>
+
+<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+<form action="action_page.php" novalidate>
+E-mail: <input type="email" name="user_email">
+<input type="submit">
+</form>
+
+<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+<form action="action_page.php" id="form1">
+First name: <input type="text" name="fname"><br>
+<input type="submit" value="Submit">
+</form>
+
+<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+Last name: <input type="text" name="lname" form="form1">
+
+
+
+<form action="action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formmethod="post" formaction="demo_post.asp" value="Submit using POST">
+</form>
+
+<p><strong>Note:</strong> The formmethod attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<form action="action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit as normal">
+  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+</form>
+
+<p><strong>Note:</strong> The formtarget attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+<h2> Image input tyep </h2>
+
+<form action="action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="image" src="../img/img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+<p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+<h2> Example of list selecting options</h2>
+<input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+<h2> File input type </h2>
+
+<form action="action_page.php">
+  Select images: <input type="file" name="img" multiple>
+  <input type="submit">
+</form>
+
+<p>Try selecting more than one file when browsing for files.</p>
+
+<p><strong>Note:</strong> The multiple attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<form action="action_page.php">
+
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5"><br>
+
+  <input type="submit">
+  
+</form>
+
+<p><strong>Note:</strong> The max and min attributes of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Firefox.</p>
+<p><strong>Note:</strong> The max and min attributes will not work for dates and time in Internet Explorer 10, since IE 10 does not support these input types.</p>
+
+<h2>The pattern Attribute</h2>
+
+<form action="action_page.php">
+  Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  <input type="submit">
+</form>
+
+<h2> Place holder</h2>
+
+<form action="action_page.php">
+  <input type="text" name="fname" placeholder="First name"><br>
+  <input type="text" name="lname" placeholder="Last name"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> The placeholder attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+<h2> The required attribute</h2>
+<form action="action_page.php">
+  Username: <input type="text" name="usrname" required>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The required attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+
+<h2> The step attribute</h2>
+
+<form action="action_page.php">
+  <input type="number" name="points" step="3">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The step attribute of the input tag is not supported in Internet Explorer 9, and earlier versions.</p>
+<h2> Number of Characters</h2>
+
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John" size="40">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+<h2> HTML5 Sections</h2>
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+<figure>
+  <img src="../img/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>Fig.1 - The Pulpit Rock, Norway.</figcaption>
+</figure>
+
+
+<figure>
+  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>Fig.1 - The Pulpit Rock, Norway.</figcaption>
+</figure>
+<h1>My First Google Map</h1>
+
+<div id="map" style="width:600px;height:600px;"></div>
+<h2> HTML5 Video Source </h2>
+
+<video width="400" controls>
+  <source src="../img/mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<video width="400" controls>
+  <source src="../img/movie2.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<video width="320" height="240">
+  <source src="../img/movie2.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<div style="text-align:center">
+  <button onclick="playPause()">Play/Pause</button>
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420" controls>
+    <source src="../img/mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+
+<video width="320" height="240" controls>
+  <source src="../img/movie2.mp4" type="video/mp4">
+  <source src="forrest_gump.ogg" type="video/ogg">
+  <track src="../img/sub.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video>
+<h2> How to add audio files in HTML5</h2>
+
+<audio controls>
+ 
+  <source src="../audio/podcast0.mp3" type="audio/mpeg">
+ 
+Your browser does not support the audio element.
+</audio>
+<audio controls>
+
+  <source src="../audio/podcast1.mp3" type="audio/mpeg">
+ 
+Your browser does not support the audio element.
+</audio>
+<audio controls>
+
+  <source src="../audio/podcast2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> <br/>
+
+<body onload="playVid()">
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br>
+
+<video id="myVideo1" width="320" height="176" controls>
+  <source src="../img/mov_bbb.mp4" type="video/mp4">
+ 
+  Your browser does not support HTML5 video.
+</video>
+
+<video id="myVideo2" width="320" height="176" controls>
+  <source src="../img/mov_bbb.mp4" type="video/mp4">
+
+  Your browser does not support HTML5 video.
+</video>
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/XGSy3_Czz8k">
+</iframe>
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/RMpULHRKQVM">
+</iframe>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&loop=1">
+</iframe>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/RMpULHRKQVM">
+</iframe>
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/cLy_-HnL5os?list=PLbvhRHYrmshTxyxERln5dw_WxS8B9z4Zr" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
+
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="../img/img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+
+
+<script>
+
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+
+
+
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(10.679446, 37.259758),
+        zoom:10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+
+function light(sw) {
+    var pic;
+    if (sw == 0) {
+        pic = "../img/pic_bulboff.gif"
+    } else {
+        pic = "../img/pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+}
+
+/// Background color code
+
+function bgColorFunction() {
+var cssColors = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","Darkorange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen"];
+var n = cssColors.length;
+var index = Math.floor((Math.random() * n) -1);
+var bgcolor = cssColors[index];
+    document.body.style.backgroundColor = bgcolor;
+    document.getElementById("colorName").innerHTML = "Color Name:" + bgcolor;
+    document.getElementById("colorNum").innerHTML = "Color number: " + index;
+}
+
+function picChange(){
+var pics = ["../img/science.jpeg","../img/health.jpg","../img/education.jpg","../img/politics.jpg","../img/sport.jpg","../img/trump.jpg"];
+var m = pics.length;
+var index = Math.floor((Math.random() * m) );
+var singlePic = pics[index];
+
+document.getElementById("diffImages").src = singlePic;
+document.getElementById("num").innerHTML = index;
+
+}
+
+/// video player
+
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 560;
+}
+
+function makeSmall() {
+    myVideo.width = 320;
+}
+
+function makeNormal() {
+    myVideo.width = 420;
+}
+
+/// continuous video player
+
+var vid1 = document.getElementById("myVideo1");
+var vid2 = document.getElementById("myVideo2");
+
+function playVid() {
+    vid1.play();
+if(vid1.ended){
+vid2.play();
+console.log(vid1.ended);
+
+}
+
+function pauseVid() {
+    vid1.pause();
+
+}
+}
+
+
+
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+<script>
+
+</body>
+</html>
